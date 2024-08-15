@@ -1,0 +1,55 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#emojis {
+  font-size: 40px; /* Sets the font size of emojis */
+  text-align: center; /* Centers the emojis horizontally within the container */
+  margin: 20px 0; /* Adds vertical space around the emojis */
+  transition: transform 0.3s ease; /* Adds smooth scaling effect */
+}
+
+#emojis:hover {
+  transform: scale(1.2); /* Scales up the emojis to 120% of their original size on hover */
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Scales up to 110% of the original size */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  background-color: blue;
+  color: aliceblue;
+  padding: 15px;
+  width: 150px; /* Adjust the width to be smaller */
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  animation: pulse 1s infinite; /* Apply the pulse animation */
+}
+
+button:hover {
+  background-color: darkblue; /* Changes the background color on hover */
+}
+
+.box {
+  background-color: #f0f0f0;
+  color: blue;
+  padding: 15px;
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+}
